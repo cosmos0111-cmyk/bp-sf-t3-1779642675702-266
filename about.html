@@ -75,71 +75,101 @@
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <a href="/" style="font-weight:800; font-size:1.2rem; letter-spacing:-0.02em; color:#fff; display:flex; align-items:center; gap:0.5rem;">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="16" cy="16" r="14" stroke="#00ff88" stroke-width="3" />
-                    <path d="M12 16L16 20L22 12" stroke="#00ff88" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                AEGIS WARMER
-            </a>
-            <ul class="nav-links">
-                <li><a href="/">홈</a></li>
-                <li><a href="/about" class="active">정보</a></li>
-                <li><a href="/services">서비스</a></li>
-                <li><a href="/contact">문의</a></li>
-            </ul>
-            <a href="tel:010-6279-0862" class="tel-link">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                010-6279-0862
-            </a>
-            <button class="hamburger" onclick="document.getElementById('mobileMenu').classList.toggle('open')">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </nav>
+<main>
+<section class="container section-gap">
+  <p class="text-accent">네트워크 보안 정보 · 마포구</p>
+  <h1>화곡 셔츠룸 이용에 앞서 알아두면 좋은 정보</h1>
+  <p>마포구 화곡 인근에서 셔츠룸을 이용하려는 분들을 위해 기본적으로 확인해두면 좋은 정보를 정리했습니다. 방문 전 아래 내용을 참고하시기 바랍니다.</p>
+</section>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="/" onclick="this.closest('.mobile-menu').classList.remove('open')">홈</a>
-        <a href="/about" class="active" onclick="this.closest('.mobile-menu').classList.remove('open')">정보</a>
-        <a href="/services" onclick="this.closest('.mobile-menu').classList.remove('open')">서비스</a>
-        <a href="/contact" onclick="this.closest('.mobile-menu').classList.remove('open')">문의</a>
-        <a href="tel:010-6279-0862" style="margin-top:1.5rem; background:#00ff88; color:#0b0b0b; padding:0.7rem 2rem; font-weight:800;">010-6279-0862</a>
+<section class="container section-gap flex-col">
+  <h2>핵심 정보</h2>
+  <div class="grid-3 stat-grid">
+    <div class="brutal-card">
+      <p class="text-accent">예약</p>
+      <p>전화 사전 예약 기본</p>
     </div>
+    <div class="brutal-card">
+      <p class="text-accent">운영</p>
+      <p>저녁부터 새벽 시간대 중심</p>
+    </div>
+    <div class="brutal-card">
+      <p class="text-accent">인원</p>
+      <p>동반 인원별 룸 배정</p>
+    </div>
+  </div>
+</section>
 
-    <!-- Hero Section -->
-    <section style="padding:5rem 0 3rem;">
-        <div class="container">
-            <div class="flex-row" style="gap:3rem;">
-                <div class="flex-col" style="flex:1.3;">
-                    <span class="text-accent" style="font-weight:700; letter-spacing:0.15em; font-size:0.85rem;">▶ 마포구 화곡동 네트워크 보안</span>
-                    <h1>화곡 셔츠룸<br>보안 인프라 정보</h1>
-                    <p style="font-size:1.15rem; color:#aaa; max-width:65ch;">
-                        서울 마포구 화곡동 셔츠룸 대상 <strong class="text-accent">실시간 네트워크 보안</strong> 솔루션의 상세 스펙과 운영 데이터.  
-                        2024년 마포구 내 불법 침입 시도 <strong class="text-accent">▲37%</strong> 증가에 대비한 엔터프라이즈급 암호화 및 모니터링 체계.
-                    </p>
-                    <div class="flex-row" style="gap:1.5rem; flex-wrap:wrap;">
-                        <a href="#spec" class="brutal-card" style="padding:0.8rem 2rem; background:#00ff88; color:#0b0b0b; font-weight:700; border:none; display:inline-flex; align-items:center; gap:0.6rem;">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 15v2m0 0v2m0-2h2m-2 0H10m9-10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h14z"/></svg>
-                            스펙 및 데이터 바로가기
-                        </a>
-                        <a href="tel:010-6279-0862" style="color:#00ff88; border:1px solid #00ff88; padding:0.8rem 2rem; font-weight:600; display:inline-flex; align-items:center; gap:0.6rem; transition:0.2s;">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            전문가 상담
-                        </a>
-                    </div>
-                </div>
-                <div style="flex:0.9; background:#141414; border:1px solid #222; padding:2rem; box-shadow:8px 8px 0 #0a0a0a;">
-                    <div class="stat-grid">
-                        <div>
-                            <div style="font-size:2.5rem; font-weight:900; color:#00ff88;">99.8%</div>
-                            <div style="font-size:0.85rem; color:#888;">침입 탐지율</div>
-                        </div>
-                        <div>
-                            <div style="font-size:2.5rem; font-weight:900; color:#00ff88;">15ms</div>
-                            <div style="font-size:0.85rem; color:#888;">평균 대기 시간
+<section class="container section-gap flex-row">
+  <div class="brutal-card">
+    <h3>지역 특징</h3>
+    <p>화곡은 마포구와 인접한 상권으로, 대중교통 접근이 비교적 편리하고 주변에 다양한 업종이 밀집해 있어 이동 동선을 짜기 수월한 편입니다.</p>
+  </div>
+  <div class="brutal-card">
+    <h3>예약 절차</h3>
+    <p>희망 날짜와 시간, 인원을 미리 전달하면 배정이 원활하게 이루어집니다. 급하게 방문할 경우 대기가 발생할 수 있는 점을 참고하시기 바랍니다.</p>
+  </div>
+</section>
+
+<section class="container section-gap">
+  <h2>체크리스트</h2>
+  <ul>
+    <li>방문 예정 시간과 매장 운영 시간이 맞는지 확인</li>
+    <li>인원 수에 맞는 룸 구성이 가능한지 사전 확인</li>
+    <li>결제 방식(카드·현금) 가능 여부 확인</li>
+    <li>주차 또는 대중교통 이용 경로 확인</li>
+    <li>단체 방문 시 추가 인원 발생 가능성 미리 고지</li>
+    <li>연락처 오류 없이 정확히 전달했는지 재확인</li>
+  </ul>
+</section>
+
+<section class="container section-gap flex-row">
+  <div class="brutal-card">
+    <h3>평일 이용</h3>
+    <p>비교적 여유 있게 배정받을 수 있는 편이며, 시간대 조율이 수월한 경우가 많습니다.</p>
+  </div>
+  <div class="brutal-card">
+    <h3>주말 이용</h3>
+    <p>수요가 몰리는 시간대가 있어 여유를 두고 예약하는 것이 안전합니다.</p>
+  </div>
+</section>
+
+<section class="container section-gap">
+  <h2>용어 정리</h2>
+  <div class="brutal-card">
+    <p><strong>세팅</strong> — 인원과 룸 준비가 완료되어 바로 이용할 수 있는 상태를 말합니다.</p>
+  </div>
+  <div class="brutal-card">
+    <p><strong>웨이팅</strong> — 예약 없이 방문했을 때 자리가 날 때까지 대기하는 상태를 말합니다.</p>
+  </div>
+</section>
+
+<section class="container section-gap">
+  <h2>자주 묻는 질문</h2>
+  <div class="brutal-card">
+    <p><strong>Q. 당일 예약도 가능한가요?</strong></p>
+    <p>A. 상황에 따라 가능할 수 있으나, 대기 시간을 줄이려면 사전 예약을 권장합니다.</p>
+  </div>
+  <div class="brutal-card">
+    <p><strong>Q. 인원이 변경되면 어떻게 하나요?</strong></p>
+    <p>A. 변경 사항이 생기면 방문 전 미리 매장에 알려주시면 배정 조율에 도움이 됩니다.</p>
+  </div>
+  <div class="brutal-card">
+    <p><strong>Q. 초행길인데 주차가 가능한가요?</strong></p>
+    <p>A. 매장별로 주차 여건이 다르므로 예약 시 함께 문의하는 것을 권장합니다.</p>
+  </div>
+  <div class="brutal-card">
+    <p><strong>Q. 예약을 취소하려면 어떻게 하나요?</strong></p>
+    <p>A. 방문 예정 시간 이전에 최대한 빨리 매장으로 연락해 취소 의사를 전달하는 것이 좋습니다.</p>
+  </div>
+</section>
+
+<section class="container section-gap">
+  <p>문의 사항은 아래 번호로 연락하시면 안내받으실 수 있습니다.</p>
+  <a class="tel-link" href="tel:010-6279-0862">010-6279-0862</a>
+</section>
+</main>
+
+
 </body>
 </html>

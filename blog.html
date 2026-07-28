@@ -89,76 +89,79 @@
     </style>
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <div class="logo">AEGIS WARMER</div>
-            <ul id="nav-menu">
-                <li><a href="/">홈</a></li>
-                <li><a href="/blog">블로그</a></li>
-                <li><a href="#contact" class="nav-cta">상담 예약</a></li>
-                <li><a href="tel:01062790862" class="tel-link">010-6279-0862</a></li>
-            </ul>
-            <div class="hamburger-menu" onclick="document.getElementById('nav-menu').classList.toggle('active')">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-    </nav>
 
-    <section class="blog-header container">
-        <div class="blog-meta">2025-06-12 · 보안 인사이트 · 12분 읽기</div>
-        <h1>화곡 셔츠룸 네트워크 보안: <span class="text-accent">2025년 위협 동향과 방어 전략</span></h1>
-        <p class="section-gap" style="font-size: 1.1rem;">데이터 기반 분석으로 밝혀낸 마포 지역 업소 네트워크 취약점과 실질적 대응 방안</p>
-        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2rem;">
-            <span class="tag">네트워크 보안</span>
-            <span class="tag">화곡 셔츠룸</span>
-            <span class="tag">침입 탐지</span>
-            <span class="tag">암호화</span>
-            <span class="tag">VPN</span>
-        </div>
-    </section>
+<main>
+<article class="container section-gap blog-content">
+  <header class="blog-header">
+    <p class="blog-meta tag">이용 가이드 · 화곡 셔츠룸</p>
+    <h1>화곡 셔츠룸, 방문 전 알아두면 좋은 팁</h1>
+  </header>
 
-    <section class="container blog-content">
-        <div class="flex-row">
-            <div style="flex: 2; min-width: 300px;">
-                <div class="glow-box">
-                    <h3 style="margin-bottom: 0.5rem;">핵심 요약</h3>
-                    <ul>
-                        <li>2025년 상반기 마포구 업소 대상 네트워크 침입 시도 47% 증가</li>
-                        <li>암호화되지 않은 IP 카메라 트래픽이 가장 취약한 지점</li>
-                        <li>온-프레미스 VPN + 엔드포인트 암호화 조합으로 92% 위협 차단 가능</li>
-                    </ul>
-                </div>
+  <p>화곡 지역에서 셔츠룸을 이용할 계획이라면, 아래 내용을 먼저 살펴보는 것이 도움이 됩니다. 매장마다 세부 운영 방식이 다르므로 일반적인 흐름을 참고용으로 정리했습니다.</p>
 
-                <h3>1. 현재 마포 지역 네트워크 보안 현주소</h3>
-                <p>2025년 1월부터 5월까지 Aegis Warmer의 마포구 화곡 셔츠룸 대상 네트워크 보안 모니터링 데이터에 따르면, 전체 업소의 <strong>68%</strong>가 최소 하나 이상의 심각한 취약점을 보유하고 있었습니다. 특히 외부에서 접근 가능한 RTSP 스트림(IP 카메라)이 발견된 사례가 전체의 41%에 달했으며, 이 중 23%는 별도의 인증 없이 공개된 상태였습니다. 이는 단순한 사생활 침해를 넘어 업소 전체 네트워크로의 진입점이 될 수 있음을 의미합니다.</p>
+  <section class="flex-col section-gap">
+    <h2>이용 팁 3가지</h2>
+    <div class="data-card brutal-border">
+      <p class="stat-number">01</p>
+      <h3>예약 타이밍</h3>
+      <p>주말 저녁 등 수요가 몰리는 시간대는 여유를 두고 예약하는 것이 좋습니다.</p>
+    </div>
+    <div class="data-card brutal-border">
+      <p class="stat-number">02</p>
+      <h3>인원 전달</h3>
+      <p>정확한 인원수를 미리 전달하면 룸 배정과 준비가 원활해집니다.</p>
+    </div>
+    <div class="data-card brutal-border">
+      <p class="stat-number">03</p>
+      <h3>이동 경로</h3>
+      <p>화곡 인근은 대중교통 접근이 비교적 수월하지만, 방문 전 경로를 미리 확인해두면 좋습니다.</p>
+    </div>
+    <div class="data-card brutal-border">
+      <p class="stat-number">04</p>
+      <h3>결제 확인</h3>
+      <p>매장마다 가능한 결제 수단이 다를 수 있어 예약 시 함께 물어두면 현장에서 헤매지 않습니다.</p>
+    </div>
+  </section>
 
-                <h3>2. 가장 흔한 위협 패턴 Top 3</h3>
-                <p>우리가 24/7 모니터링한 150개 업소 네트워크에서 식별된 주요 위협 유형은 다음과 같습니다:</p>
-                <div class="data-card" style="margin-bottom: 1.5rem;">
-                    <div class="stat-number">47%</div>
-                    <p style="margin-bottom: 0.3rem;"><strong>무작위 포트 스캔 + 사전 공격</strong></p>
-                    <p style="margin-bottom: 0;">주로 SSH(22번 포트)와 RDP(3389번 포트)를 대상으로 한 자동화된 무차별 대입 공격. 평균적으로 업소당 하루 300회 이상의 시도가 기록됨.</p>
-                </div>
-                <div class="data-card" style="margin-bottom: 1.5rem;">
-                    <div class="stat-number">32%</div>
-                    <p style="margin-bottom: 0.3rem;"><strong>암호화되지 않은 영상 스트림 도청</strong></p>
-                    <p style="margin-bottom: 0;">내부 네트워크에서 전송되는 IP 카메라 RTSP 스트림이 평문으로 노출. 공유기 설정 오류 또는 기본 비밀번호 사용이 주 원인.</p>
-                </div>
-                <div class="data-card" style="margin-bottom: 1.5rem;">
-                    <div class="stat-number">21%</div>
-                    <p style="margin-bottom: 0.3rem;"><strong>VPN 터널링 취약점 악용</strong></p>
-                    <p style="margin-bottom: 0;">오래된 PPTP/L2TP 프로토콜 사용 또는 VPN 게이트웨이 패치 미적용으로 인한 중간자 공격 가능성.</p>
-                </div>
+  <div class="glow-box">
+    <p class="neon-underline">매장마다 운영 정책과 구성이 다르므로, 방문 전 개별 확인이 가장 정확한 방법입니다.</p>
+  </div>
 
-                <h3>3. 단계별 방어 전략: 에이지스 워머가 제안하는 프레임워크</h3>
-                <p>단순히 방화벽 하나 설치하는 것으로는 현대적 위협에 대응할 수 없습니다. 우리는 <strong>3계층 방어 모델</strong>을 권장합니다:</p>
-                <ol>
-                    <li><strong>경계 방어:</strong> 차세대 방화벽 + IPS(침입 방지 시스템)로 외부 공격을 1차 차단. 특히 화곡 셔츠룸 환경에서는 IP 카메라 대역을 별도 VLAN으로 분리하는 것이 필수적입니다.</li>
-                    <li><strong>전송 암호화:</strong> 모든 내부 트래픽에 WireGuard 기반 VPN 터널을 적용하고, RTSP 스트림은 SRTP(보안 RTP)로 변환. 실제 구축 사례에서 암호화 적용 후 도청 가능성이 98% 감소했습니다.</li>
-                    <li><strong>지속적 모니터링:</strong> SIEM(보안 정보 및 이벤트 관리) 시스템을 통해 24/7 이상 징후 감지. 당사가 관리하는 업소에서는 평균 탐지 시간(MTTD)을 6시간에서 12분으로 단축했습니다.</li>
-                </ol>
+  <section>
+    <h2>용어 정리</h2>
+    <p><strong>세팅 시간</strong> — 예약한 인원과 룸 준비가 완료되어 이용을 시작할 수 있는 시점을 말합니다.</p>
+    <p><strong>연장</strong> — 기본 이용 시간 이후 추가로 시간을 늘리는 것을 의미합니다.</p>
+    <p><strong>웨이팅</strong> — 예약 없이 방문했을 때 자리가 날 때까지 기다리는 상태를 말합니다.</p>
+    <p><strong>노쇼</strong> — 예약 후 별도 연락 없이 방문하지 않는 경우를 말하며, 이후 예약에 영향을 줄 수 있습니다.</p>
+  </section>
 
-                <div class="glow-box">
-                    <h3
+  <section>
+    <h2>자주 묻는 질문</h2>
+    <div class="data-card">
+      <p><strong>Q. 예약을 변경하려면 어떻게 하나요?</strong></p>
+      <p>A. 방문 예정 시간 이전에 매장으로 연락해 변경 사항을 전달하면 됩니다.</p>
+    </div>
+    <div class="data-card">
+      <p><strong>Q. 단체 인원도 함께 이용할 수 있나요?</strong></p>
+      <p>A. 매장별로 수용 가능한 인원 규모가 다르므로 예약 시 정확한 인원을 안내하는 것이 좋습니다.</p>
+    </div>
+    <div class="data-card">
+      <p><strong>Q. 운영 시간은 어떻게 확인하나요?</strong></p>
+      <p>A. 매장마다 운영 시작·종료 시간이 다를 수 있어 예약 전화 시 함께 확인하는 것이 가장 정확합니다.</p>
+    </div>
+  </section>
+
+  <section class="blog-sidebar">
+    <h2>참고하면 좋은 점</h2>
+    <p>급한 일정 변경이 생기면 가급적 빨리 매장에 알리는 것이 배정 조율에 도움이 됩니다. 결제 수단은 매장마다 차이가 있을 수 있으므로 미리 확인해두는 것을 권장합니다. 처음 방문하는 경우라면 위치와 이동 경로를 여유 있게 확인해두는 것도 도움이 됩니다.</p>
+  </section>
+
+  <div class="section-gap">
+    <a class="btn-primary tel-link" href="tel:01062790862">01062790862</a>
+  </div>
+</article>
+</main>
+
+
 </body>
 </html>
